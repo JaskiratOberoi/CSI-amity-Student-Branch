@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: cornsilk;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+body
+{
+    font-family: monospace;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+}

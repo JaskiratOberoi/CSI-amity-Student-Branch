@@ -1,7 +1,13 @@
 .information {
 
   font-family: monospace;
-  padding: 0px 40px 0 40px;
+  padding: inherit;
+}
+
+@media screen and (min-width: 768px) {
+
+.info2 {
   margin-left: 80px;
   margin-right: 80px;
+}
 }

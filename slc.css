@@ -10,7 +10,7 @@
   margin-left: 90px;
   margin-right: 90px;
   font-size: 15px;
-  
+
 }
 
 .margin3{
@@ -36,7 +36,7 @@
   color: #ffffff;
   text-align: center;
   border: 12px;
-  border-style:dashed;
+  border-style:none none dashed none;
   border-color: #fff;
   border-radius: 10px;
 

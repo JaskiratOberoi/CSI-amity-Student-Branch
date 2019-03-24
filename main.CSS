@@ -1,3 +1,7 @@
+.justy{
+  text-align: justify; !important;
+}
+
 .information {
 
   font-family: monospace;

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="slc.CSS">
+<link rel="stylesheet" href="modal.CSS">
 </head>
 <body id="#myslc">
 
@@ -152,6 +153,81 @@
   </div>
   </div>
 
+  <!-- Team Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2>OUR SUPPORTERS</h2>
+  <p>The ones who never let us down!</p>
+
+  <div class="w3-row"><br>
+
+  <div class="w3-quarter">
+    <a onclick="document.getElementById('id01').style.display='block'"><img src="media/spn1.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+  </div>
+
+    <div id="id01" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content animate">
+        <div class="imgcontainer">
+          <p class="w3-justify info2">INVENTIVE, true to its name, is always striving to develop new solutions through innovations in technology and methodology, to continuously improve its deliverable and delight its customers. For the purpose, it has setup a state-of-the-art laboratory for hardware innovations and an IT Center of Excellence for software development. It also has multiple training centers for field staff, fully equipped with different makes and models of energy meters and other necessary equipment and accessories and expertise. It has more than 75 working offices and growing, covering almost every District of Uttar Pradesh. It has over 2500 people strong team consisting of domain experts, engineers, managers, supervisors & field executives.
+          </p>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="w3-quarter">
+    <a onclick="document.getElementById('id02').style.display='block'"><img src="media/spn2.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+  </div>
+
+  <div id="id02" class="modal">
+    <!-- Modal Content -->
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <p class="w3-justify info2">Served the Travel & Tour industry since last many years as franchise to an international house of repute. Having understood travel needs of the customers of all segments, and having understood various unavoidable problems, which spoil the very charm of holidays, the company has planned to serve people in the field of Tour & Travel in altogether an innovative manner.  </p>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-quarter">
+    <a onclick="document.getElementById('id03').style.display='block'"><img src="media/spn3.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+  </div>
+  <div id="id03" class="modal">
+    <!-- Modal Content -->
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <p class="w3-justify info2">Synergy Plus Hospital has been established by Futuristic Medicare Pvt. Ltd. Which is incorporated under the Companies Act as a Private Limited Company to extend the medical facilities to the communities at large residing in and around Agra. The directors of the company are all highly qualified super specialists having great expertise and experience. Our hospital is a 60 bedded hospital (with a provision of expansion up to 150 beds) including ICCU, CCU, PICU, NICU, Emergency, Trauma and BURN Unit. We have all highly advanced and modern therapeutic and diagnostic facilities and qualified & trained nursing staff in all wards. We are extending the exceptional range of technology combined with remarkable spectrum of clinical expertise at very competitive rates under one roof through a team of 40 specialists & super specialists for all specialized and general treatment.</p>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-quarter">
+    <a onclick="document.getElementById('id04').style.display='block'"><img src="media/spn4.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+  </div>
+  <div id="id04" class="modal">
+    <!-- Modal Content -->
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <p class="w3-justify info2">LAPCARE is an award-winning international brand well recognized for offering consumer technology products. Over the years it has created a forte in laptop peripherals and accessories for all premium brands of laptops. Established in 1997 in Singapore and entered the Indian market in 2007 associating with Rx Infotech Pvt. limited.
+First of all, It has offices/branches across 36 locations in the country. More so Lapcare has also carved in as a niche one-stop shop offering quality consumer technology products at highly affordable pricing. Acknowledged for its quality, Lapcare has added many accolades to its kitty, as a result, It has also bagged India’s Greatest Brands Award 2017-2018.</p>
+  </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
 
 
 
@@ -168,6 +244,17 @@
     </div>
   </footer>
 
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
 
 </body>
 </html>

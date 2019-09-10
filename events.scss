@@ -1,0 +1,17 @@
+$colors: (
+  background: #f1f1f1,
+  text: #000000,
+  primary: #1d70a2,
+  accent: #2892d7
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: color(background);
+  color: color(text);
+}

@@ -1,59 +1,53 @@
-.justy{
-  text-align: justify; !important;
+.justy {
+  text-align: justify;
 }
 
-.center_text{
+.center_text {
   text-align: center;
 }
 
 .information {
-
   font-family: monospace;
   padding: inherit;
 }
 
 @media screen and (min-width: 768px) {
+  .info2 {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
 
-.info2 {
-  margin-left: 90px;
-  margin-right: 90px;
-}
-
-.margin3{
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 50px;
-}
+  .margin3 {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-
-.margin2{
-  margin-top: 50px;
+  .margin2 {
+    margin-top: 50px;
+  }
 }
-}
 
-.heading{
-
+.heading {
   background-color: #1a1a1a;
   color: #ffffff;
   text-align: center;
   border: 12px;
-  border-style:dashed;
+  border-style: dashed;
   border-color: #fff;
   border-radius: 10px;
-
 }
 
-.head{
+.head {
   background-color: #fff;
 }
 
-#myslc{
+#myslc {
   background-color: #f1f1f1;
 }
 
-.justy{
-  text-align: justify; !important;
-
+.justy {
+  text-align: justify;
 }

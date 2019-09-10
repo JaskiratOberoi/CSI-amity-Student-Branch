@@ -1,0 +1,46 @@
+$colors: (
+  background: #f1f1f1,
+  text: #000000,
+  primary: #1d70a2,
+  accent: #2892d7
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: color(background);
+  color: color(text);
+}
+
+#events {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  path {
+    stroke-dasharray: 610px;
+    stroke-dashoffset: 610px;
+    animation: appear-anim 2s ease forwards;
+    // animation: fill-anim 0.5s ease forwards 2s;
+  }
+}
+
+@keyframes appear-anim {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes fill-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #000000;
+  }
+}

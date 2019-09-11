@@ -1,4 +1,5 @@
 body {
+  font-size: 10px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background-color: #f1f1f1;
@@ -116,6 +117,10 @@ nav ul li a {
   color: #f1f1f1;
 }
 
+nav ul li a:hover {
+  color: #3e64ff;
+}
+
 @-webkit-keyframes nav-bg {
   from {
     background-color: transparent;
@@ -161,6 +166,7 @@ nav ul li a {
 }
 
 main {
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +181,7 @@ main {
 main .container {
   width: 1000px;
   position: relative;
-  top: 20rem;
+  top: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,9 +201,10 @@ main .container .card .face {
   transition: 0.5s;
 }
 
-main .container .card .face .face1 {
+main .container .card .face1 {
   position: relative;
-  background-color: #333;
+  background-color: #fff;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,25 +219,25 @@ main .container .card .face .face1 {
           transform: translateY(100px);
 }
 
-main .container .card .face .face1 .content {
-  opacity: 0.2;
+main .container .card .face1 .content {
+  opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-main .container .card .face .face1 .content img {
+main .container .card .face1 .content img {
   max-width: 100px;
 }
 
-main .container .card .face .face1 .content h3 {
+main .container .card .face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #fff;
+  color: #0d0d0d;
   text-align: center;
   font-size: 1.5em;
 }
 
-main .container .card .face .face2 {
+main .container .card .face2 {
   position: relative;
   background-color: #fff;
   display: -webkit-box;
@@ -245,18 +252,18 @@ main .container .card .face .face2 {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
 
-main .container .card .face .face2 .content p {
+main .container .card .face2 .content p {
   margin: 0;
   padding: 0;
 }
 
-main .container .card .face .face2 .content a {
+main .container .card .face2 .content a {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
@@ -266,22 +273,22 @@ main .container .card .face .face2 .content a {
   border: 1px solid #333;
 }
 
-main .container .card .face .face2 .content a:hover {
+main .container .card .face2 .content a:hover {
   background: #333;
   color: #fff;
 }
 
-main .container .card:hover .face .face1 {
-  background: #ff0057;
+main .container .card:hover .face1 {
+  background: #3e64ff;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-main .container .card:hover .face .face1 .content {
+main .container .card:hover .face1 .content {
   opacity: 1;
 }
 
-main .container .card:hover .face .face2 {
+main .container .card:hover .face2 {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

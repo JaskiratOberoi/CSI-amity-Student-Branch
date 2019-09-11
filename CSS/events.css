@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-color: #b4b4b4;
+  background-color: #f1f1f1;
   color: #0d0d0d;
 }
 
@@ -104,7 +104,7 @@ nav ul li {
   font-weight: 800;
   position: relative;
   top: 250%;
-  color: #b4b4b4;
+  color: #f1f1f1;
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
@@ -113,7 +113,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #b4b4b4;
+  color: #f1f1f1;
 }
 
 @-webkit-keyframes nav-bg {
@@ -172,7 +172,7 @@ main {
           justify-content: center;
 }
 
-.container {
+main .container {
   width: 1000px;
   position: relative;
   top: 20rem;
@@ -184,18 +184,18 @@ main {
           justify-content: space-between;
 }
 
-.container .card {
+main .container .card {
   position: relative;
 }
 
-.container .card .face {
+main .container .card .face {
   width: 300px;
   height: 200px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.container .card .face .face1 {
+main .container .card .face .face1 {
   position: relative;
   background-color: #333;
   display: -webkit-box;
@@ -212,17 +212,17 @@ main {
           transform: translateY(100px);
 }
 
-.container .card .face .face1 .content {
+main .container .card .face .face1 .content {
   opacity: 0.2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.container .card .face .face1 .content img {
+main .container .card .face .face1 .content img {
   max-width: 100px;
 }
 
-.container .card .face .face1 .content h3 {
+main .container .card .face .face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -230,7 +230,7 @@ main {
   font-size: 1.5em;
 }
 
-.container .card .face .face2 {
+main .container .card .face .face2 {
   position: relative;
   background-color: #fff;
   display: -webkit-box;
@@ -251,12 +251,12 @@ main {
           transform: translateY(-100px);
 }
 
-.container .card .face .face2 .content p {
+main .container .card .face .face2 .content p {
   margin: 0;
   padding: 0;
 }
 
-.container .card .face .face2 .content a {
+main .container .card .face .face2 .content a {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
@@ -266,22 +266,22 @@ main {
   border: 1px solid #333;
 }
 
-.container .card .face .face2 .content a:hover {
+main .container .card .face .face2 .content a:hover {
   background: #333;
   color: #fff;
 }
 
-.container .card:hover .face .face1 {
+main .container .card:hover .face .face1 {
   background: #ff0057;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-.container .card:hover .face .face1 .content {
+main .container .card:hover .face .face1 .content {
   opacity: 1;
 }
 
-.container .card:hover .face .face2 {
+main .container .card:hover .face .face2 {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

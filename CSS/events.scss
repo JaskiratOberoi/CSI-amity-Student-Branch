@@ -96,8 +96,10 @@ body {
 	font-size: 10px;
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
-	background-color: color(background);
+	// background-color: color(background);
 	color: color(text);
+	background-color: rgb(0, 38, 255);
+	background-image: linear-gradient(to top right, rgb(0, 110, 255), #06d5f0);
 }
 
 // Events header animation

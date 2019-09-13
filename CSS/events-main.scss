@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+// Events header animation
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 2em 0;
+	padding: 2em 0 2em 0;
+	div {
+		display: flex;
+	}
+}
+
+#events {
+	position: absolute;
+	top: 5rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fill-anim 0.5s ease forwards 1.5s;
+	path {
+		stroke-dasharray: 610px;
+		stroke-dashoffset: 610px;
+		animation: appear-anim 2s ease forwards;
+	}
+}
+
+@keyframes appear-anim {
+	to {
+		stroke-dashoffset: 0%;
+	}
+}
+
+@keyframes fill-anim {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #0d0d0d;
+	}
+}
+
+.flex-r {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+	align-content: flex-start;
+}
+.flex-c {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.event_cards {
+	margin: 1em;
+	width: 20%;
+	// box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+	&:hover {
+		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6);
+		div {
+			p {
+				font-weight: 800;
+			}
+		}
+	}
+}
+
+.yearbox {
+	margin-top: 4em;
+}
+
+main {
+	opacity: 0;
+	animation: fade-in 1s ease forwards 2s;
+	div {
+		h2 {
+			font-weight: 600;
+			box-sizing: border-box;
+			border: teal solid 3px;
+			color: #fff;
+			background: #0d0d0d;
+			// margin: 0 16em;
+			border-radius: 0.2em;
+			box-shadow: 1px 2px 10px rgba(0, 128, 128, 0.63);
+		}
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../CSS/events-main.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<title>Events</title>
+	</head>
+	<body>  
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align ">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-teal"><img class="fa fa-home w3-margin-right" src="../media/csi-logo.png" width="20px" height="parent"></i>CSI</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Events</a>
+            <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
+            <span class="w3-bar-item w3-button w3-hide-small w3-white">Past Events</span>
+            <a href="https://www.facebook.com/amitycsistudentbranch/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Facebook">Latest Updates<i class="fa fa-facebook" style="padding: 0 0px 0 10px "></i></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Team</a>
+            <a href="#work" class="w3-bar-item w3-button">Work</a>
+            <a href="#aboutus" class="w3-bar-item w3-button">About us</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <span class="w3-bar-item w3-button w3-hide-small w3-white">Past Events</span>
+        </div>
+    </div>
+    <br>
+    <header>
+        <!-- Events animated header -->
+        <div>
+            <svg id="events" width="380" height="85" viewBox="0 0 380 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42.4688 38.0126V36.5126H40.9688H14.515V13.6964H44.2705H45.7705V12.1964V3.8864V2.3864H44.2705H3H1.5V3.8864V81.2244V82.7244H3H44.2705H45.7705V81.2244V72.9145V71.4145H44.2705H14.515V47.8226H40.9688H42.4688V46.3226V38.0126ZM124.221 4.52363L124.98 2.4972H122.816H112.251H111.198L110.84 3.48669L88.1488 66.1803L65.4572 3.48669L65.0991 2.4972H64.0468H53.3715H51.2074L51.9669 4.52363L80.9113 81.7508L81.2761 82.7244H82.3158H93.8716H94.9113L95.2762 81.7508L124.221 4.52363ZM173.266 38.0126V36.5126H171.766H145.312V13.6964H175.068H176.568V12.1964V3.8864V2.3864H175.068H133.797H132.297V3.8864V81.2244V82.7244H133.797H175.068H176.568V81.2244V72.9145V71.4145H175.068H145.312V47.8226H171.766H173.266V46.3226V38.0126ZM250.532 82.7244H252.032V81.2244V3.8864V2.3864H250.532H240.517H239.017V3.8864V60.2494L201.491 3.06345L201.047 2.3864H200.237H190.222H188.722V3.8864V81.2244V82.7244H190.222H200.237H201.737V81.2244V24.7582L239.262 82.0463L239.706 82.7244H240.517H250.532ZM316.317 3.9972V2.4972H314.817H262.872H261.372V3.9972V12.1964V13.6964H262.872H282.392V81.2244V82.7244H283.892H293.907H295.407V81.2244V13.6964H314.817H316.317V12.1964V3.9972ZM337.187 80.7004L337.202 80.7074L337.217 80.7141C341.469 82.582 346.228 83.5 351.467 83.5C356.947 83.5 361.784 82.4264 365.929 80.2219C370.025 78.0432 373.177 75.1677 375.317 71.5772C377.432 68.0276 378.5 64.2177 378.5 60.1725C378.5 55.0873 377.353 50.8831 374.884 47.7308C372.544 44.671 369.71 42.4012 366.383 40.9626C363.204 39.5164 359.055 38.0908 353.961 36.6786C349.815 35.5066 346.607 34.4898 344.321 33.6281C342.257 32.7528 340.507 31.519 339.052 29.9249C337.8 28.4777 337.119 26.564 337.119 24.0519C337.119 20.5124 338.292 17.9436 340.526 16.1314L340.536 16.1235L340.546 16.1155C342.862 14.1717 345.909 13.1424 349.816 13.1424C354.033 13.1424 357.255 14.2165 359.635 16.2237L359.644 16.2315L359.653 16.2392C362.126 18.2572 363.425 20.5132 363.736 23.0179L363.899 24.3331H365.224H376.23H377.884L377.722 22.6867C377.097 16.3083 374.296 11.13 369.345 7.25136C364.473 3.37724 358.251 1.5 350.807 1.5C345.639 1.5 340.982 2.41879 336.868 4.29429L336.858 4.29887C332.811 6.17944 329.615 8.86828 327.321 12.372C325.02 15.8868 323.884 19.9076 323.884 24.3843C323.884 29.3983 324.996 33.5846 327.369 36.7986L327.382 36.816L327.396 36.833C329.735 39.8168 332.532 42.0468 335.783 43.4842L335.796 43.4895C338.972 44.86 343.122 46.2113 348.219 47.5502C352.3 48.651 355.503 49.6677 357.848 50.5977C360.061 51.4756 361.877 52.745 363.324 54.4009C364.653 55.9208 365.375 57.9463 365.375 60.6157C365.375 63.958 364.162 66.6453 361.707 68.7922C359.344 70.8496 355.993 71.9684 351.467 71.9684C346.719 71.9684 343.327 70.812 341.055 68.7241C338.751 66.4647 337.443 63.7318 337.112 60.4645L336.975 59.1157H335.619H324.944H323.418L323.444 60.6418C323.523 65.1316 324.78 69.1562 327.237 72.6665L327.242 72.6731L327.246 72.6798C329.688 76.0898 333.019 78.758 337.187 80.7004Z" stroke="#0D0D0D" stroke-width="3"/>
+                </svg>
+                
+                
+        </div>
+        </header>
+
+    <main class="flex-r">
+        <div class="w3-container flex-c yearbox">
+            <h2>2018-2019</h2>
+          <div class="flex-r">
+            <div class="w3-card-4 event_cards" >
+              <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+              <div class="w3-container w3-center">
+                <p>Decrypton 5.0</p>
+              </div>
+            </div>
+            <div class="event_cards w3-card-4" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Code Hunt 4.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Quiz-O-Mania 3.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>The Italian / Austrian Alps</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-container flex-c yearbox">
+            <h2>2017-2018</h2>
+          <div class="flex-r">
+            <div class="w3-card-4 event_cards" >
+              <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+              <div class="w3-container w3-center">
+                <p>Decrypton 4.0</p>
+              </div>
+            </div>
+            <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Code Hunt 3.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Quiz-O-Mania 2.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Scrap Wars</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-container flex-c yearbox">
+            <h2>2017-2018</h2>
+          <div class="flex-r">
+            <div class="w3-card-4 event_cards" >
+              <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+              <div class="w3-container w3-center">
+                <p>Decrypton 3.0</p>
+              </div>
+            </div>
+            <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Code Hunt 2.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>The Italian / Austrian Alps</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Quiz-O-Mania 1.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-container flex-c yearbox">
+            <h2>2016-2017</h2>
+          <div class="flex-r">
+            <div class="w3-card-4 event_cards" >
+              <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+              <div class="w3-container w3-center">
+                <p>Decrypton 2.0</p>
+              </div>
+            </div>
+            <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Code Hunt 1.0</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Selinium Automation</p>
+                </div>
+              </div>
+              <div class="w3-card-4 event_cards" >
+                <img src="../media/scrapwars.png" alt="Alps" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>The Italian / Austrian Alps</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    </body>
+</html>
